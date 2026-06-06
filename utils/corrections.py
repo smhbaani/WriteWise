@@ -5,7 +5,7 @@ class TextCorrector:
 
     def __init__(self):
 
-        self.tool = language_tool_python.LanguageTool("en-US")
+        self.tool = language_tool_python.LanguageToolPublicAPI("en-US")
 
     def get_all_errors(self, text):
 
