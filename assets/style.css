@@ -1,0 +1,284 @@
+/* =======================================================
+   GLOBAL APP STYLING
+======================================================= */
+
+html,
+body,
+[data-testid="stAppViewContainer"],
+[data-testid="stApp"],
+.main {
+    background-color: #FAF7F7 !important;
+    color: #2C2C2C !important;
+}
+
+.block-container {
+    max-width: 1200px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* =======================================================
+   FORCE ALL TEXT TO BE VISIBLE
+======================================================= */
+
+p,
+span,
+label,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #2C2C2C !important;
+}
+
+/* =======================================================
+   HERO SECTION
+======================================================= */
+
+.hero {
+    text-align: center;
+    padding: 20px 0 30px 0;
+}
+
+.hero h1 {
+    color: #6C0820 !important;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #3D5D91 !important;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* =======================================================
+   SIDEBAR
+======================================================= */
+
+section[data-testid="stSidebar"] {
+    background-color: #3D5D91 !important;
+}
+
+section[data-testid="stSidebar"] * {
+    color: white !important;
+}
+
+/* =======================================================
+   TEXT AREAS
+======================================================= */
+
+[data-testid="stTextArea"] textarea,
+textarea {
+    background-color: white !important;
+    color: #2C2C2C !important;
+    border: 2px solid #F2AEBC !important;
+    border-radius: 12px !important;
+    font-size: 16px !important;
+}
+
+[data-testid="stTextArea"] textarea:focus,
+textarea:focus {
+    border-color: #6C0820 !important;
+    box-shadow: none !important;
+}
+
+/* Placeholder Text */
+
+textarea::placeholder {
+    color: #888888 !important;
+    opacity: 1 !important;
+}
+
+/* =======================================================
+   BUTTONS
+======================================================= */
+
+.stButton > button {
+    width: 100%;
+    height: 50px;
+
+    background-color: #6C0820 !important;
+    color: white !important;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    background-color: #F2AEBC !important;
+    color: #6C0820 !important;
+    transform: translateY(-2px);
+}
+
+/* =======================================================
+   METRIC CARDS
+======================================================= */
+
+div[data-testid="metric-container"] {
+    background-color: white !important;
+
+    border: 1px solid #F2AEBC;
+
+    border-radius: 15px;
+
+    padding: 15px;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+div[data-testid="metric-container"] * {
+    color: #2C2C2C !important;
+}
+
+/* =======================================================
+   TABS
+======================================================= */
+
+button[data-baseweb="tab"] {
+    background-color: #F2DCDB !important;
+
+    color: #2C2C2C !important;
+
+    border-radius: 10px;
+
+    margin-right: 5px;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+    background-color: #6C0820 !important;
+
+    color: white !important;
+}
+
+/* =======================================================
+   ALERTS / INFO BOXES
+======================================================= */
+
+div[data-testid="stAlert"] {
+    border-radius: 12px;
+}
+
+/* =======================================================
+   SECTION HEADINGS
+======================================================= */
+
+h1,
+h2,
+h3 {
+    color: #6C0820 !important;
+}
+
+/* =======================================================
+   CUSTOM CARDS
+======================================================= */
+
+.custom-card {
+    background-color: white;
+
+    border-left: 6px solid #6C0820;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+/* =======================================================
+   SUCCESS CARD
+======================================================= */
+
+.success-card {
+    background-color: #f8fff9;
+
+    border-left: 6px solid #28a745;
+
+    border-radius: 12px;
+
+    padding: 15px;
+}
+
+/* =======================================================
+   ERROR CARD
+======================================================= */
+
+.error-card {
+    background-color: #fff8f8;
+
+    border-left: 6px solid #dc3545;
+
+    border-radius: 12px;
+
+    padding: 15px;
+}
+
+/* =======================================================
+   COPY BUTTON
+======================================================= */
+
+.copy-btn {
+    background-color: #5A86CB;
+    color: white;
+    border-radius: 10px;
+}
+
+/* =======================================================
+   SCROLLBAR
+======================================================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F2DCDB;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6C0820;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3D5D91;
+}
+
+/* =======================================================
+   HIDE STREAMLIT FOOTER
+======================================================= */
+
+footer {
+    visibility: hidden;
+}
+
+/* =======================================================
+   MOBILE RESPONSIVE
+======================================================= */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
